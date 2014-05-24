@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="jp">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Node.js 大阪 - <%- package.name %></title>
+
+        <meta name="description" content="<%- package.description %>">
+        <meta name="author" content="<%- package.author.name %>">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+        <link rel="stylesheet" href="node-osaka.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+        <link rel="stylesheet" href="/iconic/themes/bright/bright.css">
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="/iconic/js/iconic.min.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="making-iconic-responsive">
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section data-markdown="README.md" data-separator="^- - -" data-vertical="^\* \* \*"></section>
+
+            </div>
+
+        </div>
+
+        <script src="reveal.js/lib/js/head.min.js"></script>
+        <script src="reveal.js/js/reveal.min.js"></script>
+
+        <script>
+
+            function startIconic( event ) {
+                var checkInterval = setInterval(function () {
+                    if (typeof IconicJS === "undefined") {
+                        console.log("checking");
+                        return;
+                    }
+                    clearInterval(checkInterval);
+                    var iconic = IconicJS(),
+                        secondOffset = 37;
+                    iconic.inject('img.iconic');
+                    setInterval(function clockUpdate() {
+                        var hour = $(".iconic-clock-hand-hour"),
+                            minute = $(".iconic-clock-hand-minute"),
+                            second = $(".iconic-clock-hand-second"),
+                            secondNow = (Date.now() / 1000),
+                            minuteNow = (secondNow / 60),
+                            hourNow = (minuteNow / 60) % 12 - 7;
+                        secondNow = (secondNow - secondOffset) / 60;
+                        minuteNow = (minuteNow) / 60;
+                        hourNow = (hourNow / 12);
+                        second.css("-webkit-transform", "rotate(" + (360 * secondNow) + "deg)");
+                        minute.css("-webkit-transform", "rotate(" + (360 * minuteNow) + "deg)");
+                        hour.css("-webkit-transform", "rotate(" + (360 * hourNow) + "deg)");
+                    });
+                    $('#sun-control').on('input change', function () {
+                        $('.sun-wrapper').width($(this).val());
+                        IconicJS().update();
+                    });
+                }, 50);
+            }
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+            Reveal.addEventListener( 'ready', startIconic );
+        </script>
+    </body>
+</html>
