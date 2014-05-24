@@ -8,7 +8,7 @@
  - 「フロントエンドエンジニアのための dotfiles」[@jmblog](https://github.com/jmblog)
  - 「JavaScript での開発環境について」[@biwakonbu](https://github.com/biwakonbu)
  - 「[nvd3.jsでデータを楽しもう](http://www.slideshare.net/kousuketakeuhi/grand-font-engineerosaka1st)」 [@u651601f](https://github.com/u651601f)
- - 「compassとsass記法を使って高速でCSSを記述する テーマ名検討中」[@w7tree](https://github.com/w7tree)
+ - 「[compassとsass記法を使って高速でCSSを記述する](https://github.com/w7tree/compass_test)」[@w7tree](https://github.com/w7tree)
 
 ## (LT)
 
