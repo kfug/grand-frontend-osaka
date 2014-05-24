@@ -4,7 +4,8 @@
 
 (2014/05/24) 
 
- - 「簡単なviewportのためにsagen.js」[@taikiken](https://github.com/taikiken)
+ - 「簡単なviewportのためにsagen.js」[@taikiken](https://github.com/taikiken)  
+    http://www.slideshare.net/taikiken/viewport-sagenjs
  - 「フロントエンドエンジニアのための dotfiles」[@jmblog](https://github.com/jmblog)
  - 「JavaScript での開発環境について」[@biwakonbu](https://github.com/biwakonbu)
  - 「[nvd3.jsでデータを楽しもう](http://www.slideshare.net/kousuketakeuhi/grand-font-engineerosaka1st)」 [@u651601f](https://github.com/u651601f)
