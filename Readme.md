@@ -12,7 +12,7 @@
 
 ## (LT)
 
- - 「ダイナミックアイコン」[@martinheidegger](https://github.com/martinheidegger)
+ - [「ダイナミックアイコン」](https://github.com/grand-front-end-osaka/presentations/tree/master/gfeo1/dynamic_icons)[@martinheidegger](https://github.com/martinheidegger)
  - 「CSS は友達です」 @Yuzool
  - 「StyleSprite」[@AtuyL](https://github.com/AtuyL)
  - 「Gruntコツとヒント」[@bebensiganteng](https://github.com/bebensiganteng)
