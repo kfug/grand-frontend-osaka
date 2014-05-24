@@ -1,11 +1,11 @@
-発表し利用まとめ
+発表資料まとめ
 
 # GRAND FRONT_END OSAKA #1
 
-(2014/05/24) 
+(2014/05/24)
 
  - 「[簡単なviewportのためにsagen.js](http://www.slideshare.net/taikiken/viewport-sagenjs)」[@taikiken](https://github.com/taikiken)
- - 「フロントエンドエンジニアのための dotfiles」[@jmblog](https://github.com/jmblog)
+ - 「[フロントエンドエンジニアのための dotfiles](https://speakerdeck.com/jmblog/hurontoendoenziniafalsetamefalse-dotfiles)」[@jmblog](https://github.com/jmblog)
  - 「JavaScript での開発環境について」[@biwakonbu](https://github.com/biwakonbu)
  - 「[nvd3.jsでデータを楽しもう](http://www.slideshare.net/kousuketakeuhi/grand-font-engineerosaka1st)」 [@u651601f](https://github.com/u651601f)
  - 「[compassとsass記法を使って高速でCSSを記述する](https://github.com/w7tree/compass_test)」[@w7tree](https://github.com/w7tree)
