@@ -2,6 +2,10 @@
 
 (2014/05/24)
 
+[サインアップ](https://grand-front-end-osaka.doorkeeper.jp/events/11330)
+
+
+## 発表資料
  - 「[簡単なviewportのためにsagen.js](http://www.slideshare.net/taikiken/viewport-sagenjs)」[@taikiken](https://github.com/taikiken)
  - 「[フロントエンドエンジニアのための dotfiles](https://speakerdeck.com/jmblog/hurontoendoenziniafalsetamefalse-dotfiles)」[@jmblog](https://github.com/jmblog)
  - 「[JavaScript での開発環境について](http://www.slideshare.net/HigashigawaRyo/ss-35070487)」[@biwakonbu](https://github.com/biwakonbu)
